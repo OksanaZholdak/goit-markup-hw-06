@@ -715,6 +715,7 @@ body {
   background-color: rgba(46, 47, 66, 0.4);
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  padding: 72px 24px 24px 24px;
 }
 .backdrop.is-hidden .modal {
   transform: translate(-50%, -50%) scale(0);
@@ -737,7 +738,6 @@ body {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   padding: 32px;
-  padding: 72px 24px 24px 24px;
 }
 .button-close {
   width: 24px;
@@ -768,7 +768,6 @@ body {
   color: #2e2f42;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 /* stuffing of the modal window */
 .modal-text {
   font-weight: 500;
@@ -799,6 +798,7 @@ body {
 }
 .svg-input {
   position: relative;
+  margin-bottom: 8px;
 }
 .modal-input {
   width: 100%;
@@ -831,7 +831,6 @@ body {
   transform: translateY(-50%);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 /* textarea styles */
 .textarea-span {
   font-weight: 400;
@@ -897,7 +896,6 @@ body {
   background-color: #404bbf;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 /* checkbox styles */
 .label-checkbox {
   display: flex;
