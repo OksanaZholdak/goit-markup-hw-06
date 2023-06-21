@@ -668,11 +668,6 @@ body {
 
 /* section subscribe */
 
-.subscribe-form {
-  display: flex;
-  gap: 24px;
-}
-
 .subscribe-title {
   font-weight: 500;
   font-size: 16px;
@@ -681,7 +676,12 @@ body {
   color: #ffffff;
   margin-bottom: 16px;
 }
-
+.subscribe-form {
+  display: flex;
+  gap: 24px;
+}
+.subscribe-label {
+}
 .subscribe-input {
   border: 1px solid #ffffff;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -695,15 +695,17 @@ body {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   color: #ffffff;
+  background-color: transparent;
+  font-size: 12px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
 }
-
 .subscribe-input:focus {
   border: 1px solid #4d5ae5;
   outline: none;
 }
-
 .button-subscribe {
-  font-family: "roboto";
+  font-family: "Roboto", sans-serif;
   background-color: #4d5ae5;
   min-width: 165px;
   height: 40px;
@@ -715,6 +717,7 @@ body {
   line-height: 1.5;
   display: flex;
   align-items: center;
+  justify-content: center;
   text-align: center;
   letter-spacing: 0.04em;
   color: #ffffff;
@@ -726,23 +729,16 @@ body {
     border 250ms cubic-bezier(0.4, 0, 0.2, 1);
   cursor: pointer;
 }
-
 .button-subscribe:hover,
 .button-subscribe:focus {
   background: #404bbf;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
 }
-
 .subscribe-svg {
   fill: #ffffff;
   margin-left: 16px;
 }
-
-
-
-
-
 
 /* modal window */
 
@@ -770,7 +766,10 @@ body {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   padding: 32px;
-  padding-top: 72px; padding-right: 24px; padding-bottom: 24px; padding-left: 24px;
+  padding-top: 72px;
+  padding-right: 24px;
+  padding-bottom: 24px;
+  padding-left: 24px;
 }
 
 .backdrop.is-hidden .modal {
@@ -814,12 +813,6 @@ body {
   visibility: hidden;
   pointer-events: none;
 }
-
-
-
-
-
-
 
 /* stuffing of the modal window */
 
