@@ -858,9 +858,6 @@ body {
 
 .modal-input:focus + .svg-label {
   fill: #4d5ae5;
-
-  
-
 }
 
 .modal-label {
