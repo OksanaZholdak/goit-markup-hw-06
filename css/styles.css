@@ -715,7 +715,6 @@ body {
   background-color: rgba(46, 47, 66, 0.4);
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
- 
 }
 .backdrop.is-hidden .modal {
   transform: translate(-50%, -50%) scale(0);
@@ -866,6 +865,10 @@ body {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.modal-chackbox {
+  margin-bottom: 24px;
+}
+
 .button-input {
   font-family: inherit;
   display: block;
@@ -917,10 +920,13 @@ body {
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 2px;
   margin-right: 8px;
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
   fill: transparent;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .id-checkbox:checked + .label-checkbox span {
   border: none;
