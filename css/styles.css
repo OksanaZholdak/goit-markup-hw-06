@@ -234,11 +234,11 @@ body {
   padding-bottom: 120px;
 }
 
-.benefits-list {
-  /* display: flex;
+/* .benefits-list {
+  display: flex;
   align-items: center;
-  gap: 24px; */
-}
+  gap: 24px;
+} */
 
 .element {
   width: calc((100% - 72px) / 4);
