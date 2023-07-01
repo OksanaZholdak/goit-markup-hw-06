@@ -4,7 +4,7 @@
   --accent-color: #f4f4fd;
   --primary-text-color: #2e2f42;
   --secondary-text-color: #434455;
-  --thirdly-text-color: #e54d4d;
+  --thirdly-text-color: #4d5ae5;
 }
 
 *,
@@ -39,6 +39,8 @@ button {
 
 img {
   display: block;
+  width: 100%;
+  height: auto;
 }
 
 .visually-hidden {
@@ -169,16 +171,14 @@ body {
 .main-section {
   margin: 0 auto;
   background-color: var(--primary-text-color);
-
-  padding-top: 188px;
-  padding-bottom: 188px;
-  max-width: 1440px;
+  padding-top: 112px;
+  padding-bottom: 72px;
+  max-width: 428px;
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/people-office.jpg);
-
+    url(../images/screen428.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -186,9 +186,10 @@ body {
 
 .hero-title {
   font-weight: 700;
-  font-size: 56px;
-  line-height: 1.07;
+  font-size: 36px;
+  line-height: 1.11;
   text-align: center;
+  letter-spacing: 0.72px;
   color: var(--accent-color);
   margin-bottom: 48px;
   max-width: 496px;
@@ -313,8 +314,8 @@ body {
   line-height: 1, 5;
   color: var(--secondary-text-color);
   background-color: var(--accent-color);
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding-top: 96px;
+  padding-bottom: 96px;
 }
 .team-title {
   font-weight: 700;
@@ -329,6 +330,7 @@ body {
   justify-content: center;
   gap: 24px;
   text-align: center;
+  flex-wrap: wrap;
 }
 .teams {
   padding: 32px 16px;
@@ -346,9 +348,13 @@ body {
   line-height: 1.2;
   color: var(--primary-text-color);
   margin-bottom: 8px;
+  letter-spacing: 0.4px;
   text-align: center;
 }
 .team-position {
+  font-weight: 400;
+  letter-spacing: 0.32px;
+  text-align: center;
   font-size: 16px;
   line-height: 1.5;
   color: var(--secondary-text-color);
@@ -395,7 +401,6 @@ body {
   padding-top: 120px;
   padding-bottom: 120px;
 }
-
 .customers-title {
   display: flex;
   justify-content: center;
@@ -405,30 +410,25 @@ body {
   font-size: 36px;
   line-height: 1.11;
   letter-spacing: 0.02em;
-
   color: var(--primary-text-color);
 }
-
 .customers-list {
   display: flex;
   justify-content: center;
   gap: 24px;
+  flex-wrap: wrap;
 }
-
 .svg-customers {
   fill: currentColor;
 }
-
 .svg-customers:hover,
 .svg-customers:focus {
   fill: #404bbf;
 }
-
 .customers-item {
-  width: calc((100% - 120px) / 6);
+  width: calc((100% - 72px) / 2);
   height: 88px;
 }
-
 .custumers-link {
   width: 100%;
   height: 100%;
@@ -441,13 +441,11 @@ body {
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .custumers-link:hover,
 .custumers-link:focus {
   border-color: #404bbf;
   color: #404bbf;
 }
-
 .customer {
   color: #8e8f99;
 }
@@ -969,6 +967,9 @@ body {
 .modal-link {
   color: #4d5ae5;
 }
+
+
+
 /* MEDIA RULES */
 /* MEDIA WIDTH:428PX */
 @media screen and (min-width: 428px) {
@@ -988,9 +989,8 @@ body {
   }
   .element {
     display: flex;
-  flex-wrap: wrap;
-  align-items: start;
-
+    flex-wrap: wrap;
+    align-items: start;
   }
   .section-benefits {
     padding-top: 96px;
@@ -1017,7 +1017,54 @@ body {
     letter-spacing: 0.32px;
     color: var(--secondary-text-color);
   }
-}
+  .team-workers {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 24px;
+  }
+  .team-list {
+    display: inline-flex;
+    flex-wrap: wrap;
+    width: 264px;
+    align-items: start;
+  }
+  .team {
+    padding-top: 96px;
+    padding-bottom: 96px;
+  }
+  .customers-item {
+    width: calc((100% - 72px) / 3);
+  }
+  .main-section {
+    margin: 0 auto;
+    background-color: var(--primary-text-color);
+    padding-top: 112px;
+    padding-bottom: 36px;
+    max-width: 768px;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/screen768.jpg);
+  
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .hero-title {
+    color: var(--accent-color);
+text-align: center;
+font-size: 56px;
+font-family: Roboto;
+font-style: normal;
+font-weight: 700;
+line-height: 1.07;
+letter-spacing: 1.12px;
+  }
+  }
 
 
 /* MEDIA WIDTH:1128PX */
@@ -1066,33 +1113,12 @@ body {
     border-radius: 4px;
     margin-bottom: 8px;
   }
-  .team {
-    font-style: normal;
-    font-size: 16px;
-    line-height: 1, 5;
-    color: var(--secondary-text-color);
-    background-color: var(--accent-color);
-    padding-top: 120px;
-    padding-bottom: 120px;
-  }
-  .team-title {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.11;
-  
-    color: var(--primary-text-color);
-  
-    text-align: center;
-    margin-bottom: 72px;
-  }
   .team-workers {
     display: flex;
     justify-content: center;
     gap: 24px;
     text-align: center;
-  }
-  .teams {
-    padding: 32px 16px;
+    flex-wrap: nowrap;
   }
   .team-list {
     border-radius: 0px 0px 4px 4px;
@@ -1115,39 +1141,24 @@ body {
     color: var(--secondary-text-color);
     margin-bottom: 8px;
   }
-  .team-net-list {
-    display: flex;
-    justify-content: center;
-    gap: 24px;
+  .customers-item {
+    width: calc((100% - 120px) / 6);
+    height: 88px;
   }
-  .team-net-item {
-    width: 40px;
-    height: 40px;
-  }
-  .team-net-link {
-    width: 100%;
-    height: 100%;
-    background-color: #4d5ae5;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  .team-net-link:hover,
-  .team-net-link:focus {
-    background-color: #404bbf;
-  }
-  .svg-fail {
-    fill: #f4f4fd;
-  }
-  .circle {
-    border-radius: 50%;
-  }
-  .container-team {
-    padding-top: 32px;
-    padding-right: 16px;
-    padding-bottom: 32px;
-    padding-right: 16px;
+  .main-section {
+    margin: 0 auto;
+    background-color: var(--primary-text-color);
+    padding-top: 188px;
+    padding-bottom: 188px;
+    max-width: 1128px;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/people-office.jpg);
+  
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
   }
 }
