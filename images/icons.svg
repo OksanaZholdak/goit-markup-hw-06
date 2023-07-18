@@ -1,5 +1,4 @@
 <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" style="position:absolute;width:0;height:0;overflow:hidden">
-  <defs>
     <symbol id="icon-charm_menu-hamburger-1" viewBox="0 0 47 32">
       <path fill="#e5e5e5" style="fill: var(--color1, #e5e5e5)" d="M0 0h46.545v32h-46.545z"></path>
       <path fill="#fff" style="fill: var(--color2, #fff)" d="M-552.727-34.909h622.545v7165.091h-622.545z"></path>
