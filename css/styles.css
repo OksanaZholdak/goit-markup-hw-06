@@ -403,8 +403,10 @@ body {
 .customers-list {
   display: flex;
   justify-content: center;
-  gap: 16px;
+  /* gap: 16px; */
   flex-wrap: wrap;
+  row-gap: 72px;
+  column-gap: 16px;
 }
 .svg-customers {
   width: 110px;
@@ -945,7 +947,7 @@ body {
   justify-content: center;
   padding: 0;
   background-color: transparent;
-  border: 1px solid #E7E9FC;
+  border: 1px solid #e7e9fc;
   border-radius: 50%;
   outline: none;
 }
@@ -962,7 +964,7 @@ body {
   width: 100vw;
   height: 100vh;
   padding: 80px 24px 40px 40px;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   z-index: 999;
   transform: translateX(100%);
   transition: transform 250ms ease-in-out;
@@ -985,12 +987,12 @@ body {
   margin-bottom: 48px;
 }
 .mobile-menu-link {
-  color: #2E2F42;
-font-size: 36px;
-font-weight: 700;
-line-height: 1.11;
-letter-spacing: 0.72px;
-text-transform: capitalize;
+  color: #2e2f42;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.11;
+  letter-spacing: 0.72px;
+  text-transform: capitalize;
 }
 .menu-item:not(:last-child) {
   margin-bottom: 40px;
@@ -1005,11 +1007,11 @@ text-transform: capitalize;
 }
 .address-mobile {
   color: #434455;
-font-size: 20px;
-font-style: normal;
-font-weight: 500;
-line-height: 1.20;
-letter-spacing: 0.4px;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.4px;
 }
 .mobile-menu-list {
   display: flex;
@@ -1030,7 +1032,7 @@ letter-spacing: 0.4px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .svg-menu-note {
-fill: #F4F4FD;
+  fill: #f4f4fd;
 }
 
 /* MEDIA RULES */
@@ -1056,6 +1058,18 @@ fill: #F4F4FD;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .main-section {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/mobile2x.jpg);
+    }
   }
   .benefits-title {
     /* font-weight: 500;
@@ -1102,6 +1116,17 @@ fill: #F4F4FD;
     padding-top: 112px;
     padding-bottom: 112px;
   }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .main-section {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/tablet2x.jpg);
+    }
+  }
   .menu-toggle {
     display: none;
   }
@@ -1109,7 +1134,7 @@ fill: #F4F4FD;
     display: flex;
     align-items: center;
     gap: 40px;
-  } 
+  }
   /* .address-header {
     display: flex;
     flex-wrap: wrap;
@@ -1124,7 +1149,7 @@ fill: #F4F4FD;
     flex-direction: column;
     flex-wrap: wrap;
     font-size: 12px;
-    }
+  }
   .nav-class {
     color: #434455;
     font-size: 12px;
@@ -1142,8 +1167,7 @@ fill: #F4F4FD;
   }
   .nav-link {
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    position: relative;  
-  
+    position: relative;
   }
   .nav-class-link {
     padding: 20px 0;
@@ -1168,14 +1192,16 @@ fill: #F4F4FD;
   }
   .customers-item {
     /* width: calc((100% - 120px) / 3); */
-    margin-bottom: 72px;
+    /* margin-bottom: 72px; */
     width: 168px;
   }
   .customers-list {
     display: flex;
     justify-content: center;
-    gap: 24px;
+    /* gap: 24px; */
     flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 72px;
   }
   .subscribe-title {
     text-align: left;
@@ -1193,14 +1219,16 @@ fill: #F4F4FD;
   .footer-container {
     justify-content: left;
     align-items: baseline;
-    max-width: 552px;
+    max-width: 584px;
+    column-gap: 24px;
+    row-gap: 72px;
   }
   .footer-text {
-    color: #F4F4FD;
-font-size: 16px;
-font-weight: 400;
-line-height: 1.5;
-letter-spacing: 0.32px;
+    color: #f4f4fd;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.32px;
   }
   .footer-web {
     text-align: left;
@@ -1233,6 +1261,17 @@ letter-spacing: 0.32px;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+  }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .main-section {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/desktop2x.jpg);
+    }
   }
   .hero-title {
     margin-bottom: 48px;
@@ -1376,9 +1415,10 @@ letter-spacing: 0.32px;
     gap: 24px;
   }
   .navigation {
-  display: flex;
-  align-items: center;
-  gap: 40px;
-  margin-left: auto;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-left: auto;
+    flex-direction: row;
   }
 }
