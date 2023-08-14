@@ -302,7 +302,7 @@ body {
   background-color: var(--accent-color);
 }
 .team-container {
-  padding-top: 96px;
+  /* padding-top: 96px; */
   padding-bottom: 96px;
 }
 .team-title {
@@ -1266,7 +1266,7 @@ body {
     width: 264px;
   }
   .team {
-    padding-top: 96px;
+    /* padding-top: 96px; */
     /* padding-bottom: 96px; */
   }
   .footer-container {
