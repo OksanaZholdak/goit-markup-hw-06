@@ -26,21 +26,23 @@
     <header class="header">
       <div class="container head">
         <nav class="header-nav">
-          <a class="logo link"><span class="accent link">WEB</span>STUDIO</a>
+          <a class="logo logotype link"
+            ><span class="accent link">WEB</span>STUDIO</a
+          >
           <ul class="header-list list">
-            <li>
-              <a href="./index.html" class="nav-link nav-class-link link"
+            <li class="nav-link-header">
+              <a
+                href="./index.html"
+                class="nav-link nav-class-link current link"
                 >Studio</a
               >
             </li>
-            <li>
-              <a
-                href="./portfolio.html"
-                class="nav-link nav-class-link current link"
+            <li class="nav-link-header">
+              <a href="./portfolio.html" class="nav-link nav-class-link link"
                 >Portfolio</a
               >
             </li>
-            <li>
+            <li class="nav-link-header">
               <a href="" class="nav-link nav-class-link link">Contacts</a>
             </li>
           </ul>
@@ -51,19 +53,27 @@
             <li>
               <a
                 href="mailto:info@devstudio.com"
-                class="nav-link nav-class-link link"
+                class="nav-link nav-class link"
                 >info@devstudio.com</a
               >
             </li>
             <li>
-              <a
-                href="tel:+11(000)111-11-11"
-                class="nav-link nav-class-link link"
+              <a href="tel:+11(000)111-11-11" class="nav-link nav-class link"
                 >+11 (000) 111-11-11</a
               >
             </li>
           </ul>
         </address>
+
+        <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg class="menu-toggle-icon" width="32" height="22">
+            <use href="./images/icons.svg#icon-charm_menu-hamburger-1"></use>
+          </svg>
+        </button>
       </div>
     </header>
 
@@ -78,20 +88,20 @@
               <button type="button" class="button-portfolio active">All</button>
             </li>
             <li>
-              <button type="button" class="button-portfolio active">
+              <button type="button" class="button-portfolio button-portfolio-mobile active">
                 Web Site
               </button>
             </li>
             <li>
-              <button type="button" class="button-portfolio active">App</button>
+              <button type="button" class="button-portfolio button-portfolio-mobile active">App</button>
             </li>
             <li>
-              <button type="button" class="button-portfolio active">
+              <button type="button" class="button-portfolio button-portfolio-mobile active">
                 Design
               </button>
             </li>
             <li>
-              <button type="button" class="button-portfolio active">
+              <button type="button" class="button-portfolio button-portfolio-mobile active">
                 Marketing
               </button>
             </li>
@@ -115,8 +125,8 @@
                 </div>
 
                 <div class="portfolio-link">
-                  <h2 class="benefits-title">Banking App Interface Concept</h2>
-                  <p class="benefits-text">App</p>
+                  <h2 class="benefits-title-adaptive">Banking App Interface Concept</h2>
+                  <p class="benefits-text-adaptive">App</p>
                 </div>
               </a>
             </li>
@@ -138,8 +148,8 @@
                 </div>
 
                 <div class="portfolio-link">
-                  <h2 class="benefits-title">Cashless Payment</h2>
-                  <p class="benefits-text">Marketing</p>
+                  <h2 class="benefits-title-adaptive">Cashless Payment</h2>
+                  <p class="benefits-text-adaptive">Marketing</p>
                 </div>
               </a>
             </li>
@@ -161,8 +171,8 @@
                 </div>
 
                 <div class="portfolio-link">
-                  <h2 class="benefits-title">Meditation App</h2>
-                  <p class="benefits-text">App</p>
+                  <h2 class="benefits-title-adaptive">Meditation App</h2>
+                  <p class="benefits-text-adaptive">App</p>
                 </div>
               </a>
             </li>
@@ -184,8 +194,8 @@
                 </div>
 
                 <div class="portfolio-link">
-                  <h2 class="benefits-title">Taxi Service</h2>
-                  <p class="benefits-text">Marketing</p>
+                  <h2 class="benefits-title-adaptive">Taxi Service</h2>
+                  <p class="benefits-text-adaptive">Marketing</p>
                 </div>
               </a>
             </li>
@@ -207,8 +217,8 @@
                 </div>
 
                 <div class="portfolio-link">
-                  <h2 class="benefits-title">Screen Illustrations</h2>
-                  <p class="benefits-text">Design</p>
+                  <h2 class="benefits-title-adaptive">Screen Illustrations</h2>
+                  <p class="benefits-text-adaptive">Design</p>
                 </div>
               </a>
             </li>
@@ -230,8 +240,8 @@
                 </div>
 
                 <div class="portfolio-link">
-                  <h2 class="benefits-title">Online Courses</h2>
-                  <p class="benefits-text">Marketing</p>
+                  <h2 class="benefits-title-adaptive">Online Courses</h2>
+                  <p class="benefits-text-adaptive">Marketing</p>
                 </div>
               </a>
             </li>
@@ -253,8 +263,8 @@
                 </div>
 
                 <div class="portfolio-link">
-                  <h2 class="benefits-title">Instagram Stories Concept</h2>
-                  <p class="benefits-text">Design</p>
+                  <h2 class="benefits-title-adaptive">Instagram Stories Concept</h2>
+                  <p class="benefits-text-adaptive">Design</p>
                 </div>
               </a>
             </li>
@@ -276,8 +286,8 @@
                 </div>
 
                 <div class="portfolio-link">
-                  <h2 class="benefits-title">Organic Food</h2>
-                  <p class="benefits-text">Web Site</p>
+                  <h2 class="benefits-title-adaptive">Organic Food</h2>
+                  <p class="benefits-text-adaptive">Web Site</p>
                 </div>
               </a>
             </li>
@@ -299,8 +309,8 @@
                 </div>
 
                 <div class="portfolio-link">
-                  <h2 class="benefits-title">Fresh Coffee</h2>
-                  <p class="benefits-text">Web Site</p>
+                  <h2 class="benefits-title-adaptive">Fresh Coffee</h2>
+                  <p class="benefits-text-adaptive">Web Site</p>
                 </div>
               </a>
             </li>
@@ -329,7 +339,6 @@
 
         <div class="social-container">
           <p class="text-footer">Social media</p>
-
           <ul class="footer-net-list">
             <li class="footer-net-item">
               <a
@@ -343,7 +352,6 @@
                 </svg>
               </a>
             </li>
-
             <li class="footer-net-item">
               <a
                 href=""
@@ -356,7 +364,6 @@
                 </svg>
               </a>
             </li>
-
             <li class="footer-net-item">
               <a
                 href=""
@@ -369,7 +376,6 @@
                 </svg>
               </a>
             </li>
-
             <li class="footer-net-item">
               <a
                 href=""
@@ -409,5 +415,72 @@
         </div>
       </div>
     </footer>
+
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg class="menu-icon" width="8" height="8">
+          <use href="./images/icons.svg#icon-close"></use>
+        </svg>
+      </button>
+
+      <ul class="mobile-menu">
+        <li class="mobile-menu-item">
+          <a class="mobile-menu-link current link" href="">Studio</a>
+        </li>
+        <li class="mobile-menu-item">
+          <a class="mobile-menu-link link" href="">Portfolio</a>
+        </li>
+        <li class="mobile-menu-item">
+          <a class="mobile-menu-link link" href="">Contacts</a>
+        </li>
+      </ul>
+
+      <ul class="mobile-menu-lists">
+        <li class="menu-item links">
+          <a
+            href="tel:+11 (000) 111-11-11"
+            class="address-mobile-menu current link"
+            >+11 (000) 111-11-11</a
+          >
+        </li>
+        <li class="menu-item">
+          <a href="mailto:info@devstudio.com" class="address-mobile link"
+            >info@devstudio.com</a
+          >
+        </li>
+      </ul>
+
+      <ul class="mobile-menu-list">
+        <li class="mobile-menu-details">
+          <a class="mobile-menu-note" href="">
+            <svg class="svg-menu-note" width="24" height="24">
+              <use href="./images/icons.svg#icon-instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="mobile-menu-details">
+          <a class="mobile-menu-note" href=""
+            ><svg class="svg-menu-note" width="24" height="24">
+              <use href="./images/icons.svg#icon-twitter"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="mobile-menu-details">
+          <a class="mobile-menu-note" href=""
+            ><svg class="svg-menu-note" width="24" height="24">
+              <use href="./images/icons.svg#icon-facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="mobile-menu-details">
+          <a class="mobile-menu-note" href=""
+            ><svg class="svg-menu-note" width="24" height="24">
+              <use href="./images/icons.svg#icon-linkedin"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <script defer src="js/mobile-menu.js"></script>
   </body>
 </html>

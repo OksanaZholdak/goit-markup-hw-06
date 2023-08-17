@@ -446,13 +446,26 @@ body {
 /* section - 1 portfolio */
 
 .sections-projects {
-  padding: 96px 0 120px 0;
+  padding-top: 48px;
+  padding-bottom: 48px;
 }
 .button-list {
   display: flex;
-  justify-content: center;
-  gap: 24px;
-  margin-bottom: 72px;
+  width: calc((100% - 24px));
+  /* justify-content: center; */
+  flex-wrap: wrap;
+  column-gap: 24px;
+  row-gap: 16px;
+  margin-left: 16px;
+  margin-bottom: 48px;
+}
+.button-portfolio {
+  color: #ffffff;
+  background-color: #404bbf;
+}
+.button-portfolio-mobile {
+  color: #4d5ae5;
+  background-color: #f4f4fd;
 }
 .button-portfolio {
   font-family: "Roboto";
@@ -460,14 +473,14 @@ body {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
-  padding-top: 12px;
-  padding-right: 24px;
-  padding-bottom: 12px;
-  padding-left: 24px;
+  padding-top: 8px;
+  padding-right: 16px;
+  padding-bottom: 8px;
+  padding-left: 16px;
   border-radius: 4px;
   border: 1px solid #e7e9fc;
-  background-color: #f4f4fd;
-  color: var(--thirdly-text-color);
+  /* background-color: #f4f4fd; */
+  /* color: var(--thirdly-text-color); */
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
@@ -494,11 +507,12 @@ body {
 .img-list {
   display: flex;
   flex-wrap: wrap;
-  column-gap: 24px;
+  /* column-gap: 24px; */
   row-gap: 48px;
+  /* justify-content: center; */
 }
 .icon-list {
-  width: calc((100% - 48px) / 3);
+  /* width: calc((100% - 48px) / 3); */
   margin: 0px;
   display: block;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -538,6 +552,21 @@ body {
   padding: 32px 16px;
   border: 1px solid #e7e9fc;
   border-top: none;
+}
+.benefits-title-adaptive {
+  color: #2e2f42;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.4px;
+  text-align: left;
+}
+.benefits-text-adaptive {
+  color: #434455;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.32px;
 }
 
 /* FOOTER */
@@ -807,7 +836,7 @@ body {
   width: 100%;
   height: 40px;
   border-radius: 4px;
-  border: 1px solid rgba(46, 47, 66, 0.40);
+  border: 1px solid rgba(46, 47, 66, 0.4);
   padding-left: 38px;
   font-weight: 400;
   font-size: 12px;
@@ -848,12 +877,12 @@ body {
   height: 120px;
   padding: 8px 16px;
   display: block;
-  border: 1px solid rgba(46, 47, 66, 0.40);border-radius: 4px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 4px;
   outline: transparent;
   resize: none;
   background-color: transparent;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
 }
 .modal-textarea {
   margin-bottom: 16px;
@@ -1136,7 +1165,7 @@ body {
   }
   .customers-item {
     width: 190px;
-  width: 88px;
+    width: 88px;
   }
   .footer-container {
     gap: 72px;
@@ -1266,7 +1295,7 @@ body {
     width: 264px;
   }
   .team {
-    /* padding-top: 96px; */
+    padding-top: 96px;
     /* padding-bottom: 96px; */
   }
   .footer-container {
@@ -1295,6 +1324,22 @@ body {
   }
   .modal {
     width: 408px;
+  }
+
+  /* page portfolio */
+  .sections-projects {
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+  .button-list {
+    justify-content: center;
+  }
+  .img-list {
+    column-gap: 24px;
+    row-gap: 72px;
+  }
+  .icon-list {
+    width: calc((100% - 24px) / 2);
   }
 }
 
@@ -1508,5 +1553,118 @@ letter-spacing: 0.32px;
   }
   .footer-container {
     gap: unset;
+  }
+
+  /* MAIN PORTFOLIO */
+  /* section - 1 portfolio */
+
+  .sections-projects {
+    padding-top: 100px;
+    padding-bottom: 120px;
+  }
+  .button-list {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin-bottom: 72px;
+  }
+  .button-portfolio {
+    font-family: "Roboto";
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    padding-top: 12px;
+    padding-right: 24px;
+    padding-bottom: 12px;
+    padding-left: 24px;
+    border-radius: 4px;
+    border: 1px solid #e7e9fc;
+    background-color: #f4f4fd;
+    color: var(--thirdly-text-color);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .button-portfolio:hover {
+    background-color: var(--thirdly-text-color);
+    color: var(--accent-color);
+    border: 1px solid transparent;
+    border-radius: 4px;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
+  .button-portfolio:focus {
+    background-color: var(--thirdly-text-color);
+    color: var(--accent-color);
+    border: 1px solid transparent;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
+
+  /* section - 2 portfolio */
+
+  .img-list {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 48px;
+  }
+  .icon-list {
+    width: calc((100% - 48px) / 3);
+    margin: 0px;
+    display: block;
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .technologies-link {
+    display: block;
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .technologies-link:hover,
+  .technologies-link:focus {
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+      0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  }
+  .technologies-link:hover .portfolio-cover-text,
+  .technologies-link:focus .portfolio-cover-text {
+    transform: translateY(0%);
+  }
+  .portfolio-cover-image {
+    position: relative;
+    overflow: hidden;
+  }
+  .portfolio-cover-text {
+    position: absolute;
+    top: 0;
+    color: #f4f4fd;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    background-color: #4d5ae5;
+    height: 100%;
+    transform: translateY(100%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    padding: 40px 32px;
+  }
+  .portfolio-link {
+    padding: 32px 16px;
+    border: 1px solid #e7e9fc;
+    border-top: none;
+  }
+  .benefits-title-adaptive {
+    color: #2e2f42;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.4px;
+  }
+  .benefits-text-adaptive {
+    color: #434455;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.32px;
   }
 }
